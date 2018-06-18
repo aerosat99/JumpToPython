@@ -1,12 +1,7 @@
-food = "Python's favorite food is perl"
-print(food)
 '''
 문자열 안에 ' 있을 때는 전체 문자열을 " "
-
 or 문자열 안에 \' 하고 전체 문자열을 ''
-
 문자열 안에 " 있을 때는 전체 문자열을 ' ' 
-
 or 문자열 안에 \" 하고 전체 문자열을 " "
 '''
 
@@ -31,4 +26,3 @@ multiline2 = '''
 Life is too short,
 you need python'''
 print(multiline2)
-
