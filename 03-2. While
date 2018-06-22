@@ -78,7 +78,7 @@ print(sum)
 a = [20, 55, 67, 82, 45, 33, 90, 87, 100, 25]
 sum = 0
 while a :
-    b = a.pop()
+    b = a.pop() # 마지막 요소를 불러오고 리스트에서 삭제
     if b > 50 :
         sum += b
 print(sum)
