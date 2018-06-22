@@ -1,0 +1,99 @@
+print('=' * 30)
+treehit = 0
+while treehit < 10 :
+    treehit += 1
+    print('나무를 %d번 찍었습니다'%treehit)
+    if treehit >= 10 :
+        print('나무 넘어간다')
+
+print('=' * 30)
+prompt = """
+...1. Add
+...2. Del
+...3. List
+...4. Quit
+...
+...Enter number = """
+
+number = 0
+while number != 4 :
+    print(prompt)
+    number = int(input())
+
+print('=' * 30)
+coffee = 10
+money = 300
+while money :
+    print('돈을 받았으니 커피를 제공') 
+    coffee += -1
+    print('남은 커피는 %d잔'%coffee) 
+    if not coffee :
+        print('커피가 다 떨어졌습니다. 판매 중단합니다')
+        break
+
+print('=' * 30)
+coffee = 10
+while True : 
+    money = int(input('coin = '))
+    if money == 300 :
+        print('커피 제공')
+        coffee += -1
+        print('남은 커피는 %d잔'%coffee)
+    elif money > 300 :
+        print('커피 제공 & 거스름돈 %d'%(money-300)) 
+        coffee += -1
+        print('남은 커피는 %d잔'%coffee) 
+    else :
+        print('돈이 부족합니다')
+        print('남은 커피는 %d잔'%coffee)
+    if not coffee :
+        print('커피가 떨어졌습니다, 판매 중지합니다')
+        break
+
+print('=' * 30)
+a = 0
+while a < 10 :
+    a += 1
+    if a % 2 == 0 : 
+        continue
+    print(a)
+
+#Q1
+result = 0
+a = 1
+while a <=100 :
+    result += a
+    a += 1
+print(result)
+
+#Q2
+sum = 0
+a = 3
+while a <= 1000 and a % 3 == 0 :
+    sum += a
+    a += 3
+print(sum)
+
+#Q3
+a = [20, 55, 67, 82, 45, 33, 90, 87, 100, 25]
+sum = 0
+while a :
+    b = a.pop()
+    if b > 50 :
+        sum += b
+print(sum)
+
+#Q4
+a = 0
+while a <= 4 :
+    print('*' * a)
+    a += 1
+    
+
+#Q5
+star = 7   # 별의 갯수
+space = 0  # 공백의 갯수
+while star > 0 :
+    print(' ' * space + '*' * star)
+    star += -2
+    space += 1
